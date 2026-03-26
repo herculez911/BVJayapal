@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Architecture & Security Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#1E3A8A',    /* Deep Navy */
+                            electric: '#2563EB', /* Electric Blue */
+                            ice: '#F0F9FF',      /* Soft Ice Blue */
+                            slate: '#0F172A'     /* Dark Slate */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Enable smooth scrolling across the entire page */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-sans text-brand-slate antialiased bg-white">
+
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 font-bold text-xl text-brand-navy">
+                    TechArchitects
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-brand-electric transition-colors">Home</a>
+                    <a href="#capabilities" class="text-gray-600 hover:text-brand-electric transition-colors">Capabilities</a>
+                    <a href="#projects" class="text-gray-600 hover:text-brand-electric transition-colors">Impact</a>
+                    <a href="#experts" class="text-gray-600 hover:text-brand-electric transition-colors">Experts</a>
+                    <a href="#tech" class="text-gray-600 hover:text-brand-electric transition-colors">Tech Stack</a>
+                </div>
+                <a href="#contact" class="bg-brand-electric text-white px-5 py-2 rounded-md hover:bg-blue-700 transition-colors shadow-md">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="bg-brand-navy text-white min-h-screen flex items-center pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+                Architecting Enterprise Scale & Security
+            </h1>
+            <p class="mt-4 max-w-2xl mx-auto text-xl text-blue-100 mb-10">
+                Synthesizing 16+ years of expertise in network security, cloud transformation, and systems engineering to build resilient, innovative solutions.
+            </p>
+            <a href="#capabilities" class="inline-block bg-brand-electric text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:bg-white hover:text-brand-navy hover:-translate-y-1 transition-all duration-300">
+                Explore Our Capabilities
+            </a>
+        </div>
+    </section>
+
+    <section id="capabilities" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-brand-navy">Core Capabilities</h2>
+                <p class="mt-4 text-gray-600">Delivering excellence across three distinct technical domains.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-brand-ice transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-brand-ice text-brand-electric rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-electric group-hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-brand-slate">Network & Cloud Security</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Expertise in AWS Cloud transformation, security hardening, and aligning infrastructure with CISSP and ISO 27001:2022 frameworks.
+                    </p>
+                </div>
+
+                <div class="p-8 rounded-xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-brand-ice transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-brand-ice text-brand-electric rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-electric group-hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-brand-slate">Enterprise Software</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Full-stack web development utilizing ASP.NET Core, C#, Python, and microservices architecture deployed via Azure DevOps.
+                    </p>
+                </div>
+
+                <div class="p-8 rounded-xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-brand-ice transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-brand-ice text-brand-electric rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-electric group-hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-brand-slate">Systems Engineering & AI</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Deep UNIX and kernel development experience merged with modern Generative AI integrations, prompt engineering, and vibe coding.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 bg-brand-ice">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-brand-navy">Project Highlights & Impact</h2>
+                <p class="mt-4 text-gray-600">Measurable successes driven by data and architecture.</p>
+            </div>
+
+            <div class="space-y-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm border-l-4 border-brand-electric hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-bold text-brand-slate mb-2">Financial & Trading Systems</h3>
+                    <p class="text-gray-600 mb-4">
+                        Developed a real-time risk management module flagging 95% of underperforming trades. Enhanced operational efficiency by 90% through custom invoice generation systems.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm border-l-4 border-brand-navy hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-bold text-brand-slate mb-2">Infrastructure Optimization</h3>
+                    <p class="text-gray-600 mb-4">
+                        Consistently reduced costs by redesigning networks to eliminate unused circuits. Reduced system downtime significantly through proactive maintenance.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm border-l-4 border-brand-electric hover:shadow-md transition-shadow">
+                    <h3 class="text-xl font-bold text-brand-slate mb-2">Kernel & Codebase Innovations</h3>
+                    <p class="text-gray-600 mb-4">
+                        Enabled GCOV on the entire JUNOS Code Base. Re-structured configuration schemas to transition legacy daemons to 64-bit models seamlessly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experts" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-brand-navy">Meet the Experts</h2>
+                <p class="mt-4 text-gray-600">The driving forces behind our solutions.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-32 h-32 mx-auto bg-gray-200 rounded-full mb-4 overflow-hidden border-4 border-brand-ice">
+                        <div class="w-full h-full bg-blue-100 flex items-center justify-center text-blue-500 font-bold text-2xl">EV</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-slate">Eric Vinod</h3>
+                    <p class="text-brand-electric font-medium mb-3">Systems & AI Lead</p>
+                    <p class="text-gray-600 text-sm px-4">
+                        Specializing in system-level programming, Linux kernel optimization, and cutting-edge AI tool integration.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-32 h-32 mx-auto bg-gray-200 rounded-full mb-4 overflow-hidden border-4 border-brand-ice">
+                        <div class="w-full h-full bg-blue-100 flex items-center justify-center text-blue-500 font-bold text-2xl">SA</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-slate">Software Architect</h3>
+                    <p class="text-brand-electric font-medium mb-3">Enterprise Dev Lead</p>
+                    <p class="text-gray-600 text-sm px-4">
+                        Leading ERP development, financial application integrations, and robust CI/CD pipeline deployments.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-32 h-32 mx-auto bg-gray-200 rounded-full mb-4 overflow-hidden border-4 border-brand-ice">
+                        <div class="w-full h-full bg-blue-100 flex items-center justify-center text-blue-500 font-bold text-2xl">NS</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-slate">Network Architect</h3>
+                    <p class="text-brand-electric font-medium mb-3">Security Lead</p>
+                    <p class="text-gray-600 text-sm px-4">
+                        Managing global data centers, SOC 2 / ISO certifications, and enterprise infrastructure design.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech" class="py-24 bg-brand-navy text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-12">Our Technology Stack</h2>
+            
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="px-6 py-2 bg-white/10 rounded-full backdrop-blur border border-white/20 hover:bg-brand-electric hover:border-brand-electric transition-colors cursor-default">C / C#</span>
+                <span class="px-6 py-2 bg-white/10 rounded-full backdrop-blur border border-white/20 hover:bg-brand-electric hover:border-brand-electric transition-colors cursor-default">Python</span>
+                <span class="px-6 py-2 bg-white/10 rounded-full backdrop-blur border border-white/20 hover:bg-brand-electric hover:border-brand-electric transition-colors cursor-default">ASP.NET Core</span>
+                <span class="px-6 py-2 bg-white/10 rounded-full backdrop-blur border border-white/20 hover:bg-brand-electric hover:border-brand-electric transition-colors cursor-default">AWS & Azure DevOps</span>
+                <span class="px-6 py-2 bg-white/10 rounded-full backdrop-blur border border-white/20 hover:bg-brand-electric hover:border-brand-electric transition-colors cursor-default">Generative AI (Claude, Gemini, Copilot)</span>
+                <span class="px-6 py-2 bg-white/10 rounded-full backdrop-blur border border-white/20 hover:bg-brand-electric hover:border-brand-electric transition-colors cursor-default">UNIX / Linux Kernel</span>
+                <span class="px-6 py-2 bg-white/10 rounded-full backdrop-blur border border-white/20 hover:bg-brand-electric hover:border-brand-electric transition-colors cursor-default">MS SQL & MySQL</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-brand-slate text-gray-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4">Let's Build Something Robust.</h2>
+                    <p class="mb-6">Ready to discuss your enterprise architecture or security needs? Reach out to collaborate on technical problem-solving.</p>
+                    <p>📍 Chennai, India</p>
+                </div>
+                <div>
+                    <form class="space-y-4">
+                        <input type="text" placeholder="Name" class="w-full px-4 py-3 rounded bg-white/5 border border-white/10 focus:border-brand-electric focus:outline-none focus:ring-1 focus:ring-brand-electric text-white transition-colors">
+                        <input type="email" placeholder="Email" class="w-full px-4 py-3 rounded bg-white/5 border border-white/10 focus:border-brand-electric focus:outline-none focus:ring-1 focus:ring-brand-electric text-white transition-colors">
+                        <textarea placeholder="How can we help?" rows="4" class="w-full px-4 py-3 rounded bg-white/5 border border-white/10 focus:border-brand-electric focus:outline-none focus:ring-1 focus:ring-brand-electric text-white transition-colors"></textarea>
+                        <button type="button" class="bg-brand-electric text-white px-6 py-3 rounded font-medium hover:bg-blue-600 transition-colors w-full sm:w-auto">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-white/10 mt-16 pt-8 text-center text-sm text-gray-500">
+                &copy; 2026 Enterprise Architecture Solutions. All rights reserved.
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
